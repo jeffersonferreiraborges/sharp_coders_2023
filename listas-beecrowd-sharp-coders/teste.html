@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+let valor = 1576;
+let sobra = valor;
+let valorNota = [100, 50, 20, 10, 5, 2, 1];
+let qtdNotas = 0;
+
+console.log(valor);
+
+for (let nota of valorNota) {
+    qtdNotas = Math.floor(sobra / nota);
+    sobra %= nota;
+    console.log(`${qtdNotas} nota(s) de R$ ${nota},00`);
+}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
