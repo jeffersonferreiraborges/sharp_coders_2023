@@ -1,0 +1,33 @@
+/* Estilização global - padroniza todas as tags html*/
+*{
+    margin: 0;
+    padding: 0;
+    font: 14px arial;
+}
+
+/* Topo */
+header{
+    background-color: rgb(150, 150, 150);
+    overflow: auto;
+}
+
+header img{
+    float: left;
+    margin: 15px;
+}
+
+header nav{
+    float: right;
+}
+
+header a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+header a:hover{
+    color: red;
+}
