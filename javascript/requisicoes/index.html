@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisições</title>
+
+    <script>
+        // GET
+        //fetch('http://localhost:3000/clientes')
+        //.then(requisicao => console.log(requisicao))
+        //.then(requisicao => requisicao.json())
+        //.then(clientes => console.table(clientes))
+
+        // POST
+        //fetch('http://localhost:3000/clientes',
+        //{
+        //    method:'POST',
+        //    body: JSON.stringify({'nome':'Ali', 'idade':30}),
+        //    headers: {'Content-Type':'application/json'}
+        //})
+        //.then(requisicao => requisicao.json())
+        //.then(cliente => console.log(cliente));
+
+        // PUT
+        fetch('http://localhost:3000/clientes/5',
+        {
+            method:'PUT',
+            body: JSON.stringify({'nome':'Ali', 'idade':30}),
+            headers: {'Content-Type':'application/json'}
+        })
+        .then(requisicao => requisicao.json())
+        .then(cliente => console.log(cliente));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
